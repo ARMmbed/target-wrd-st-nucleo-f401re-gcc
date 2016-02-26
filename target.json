@@ -1,6 +1,6 @@
 {
   "name": "wrd-st-nucleo-f401re-gcc",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "STM32 Nucleo-F401RE target with Watch Reference Design configurations.",
   "licenses": [
     {
