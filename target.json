@@ -1,0 +1,146 @@
+{
+  "name": "wrd-st-nucleo-f401re-gcc",
+  "version": "0.0.0",
+  "description": "STM32 Nucleo-F401RE target with Watch Reference Design configurations.",
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/Apache-2.0",
+      "type": "Apache-2.0"
+    }
+  ],
+  "inherits": {
+    "st-nucleo-f401re-gcc": "*"
+  },
+  "keywords": [
+    "mbed-target:wrd-st-nucleo-f401re",
+    "f401re",
+    "watch",
+    "gcc"
+  ],
+  "similarTo": [
+    "wrd-ui",
+    "framebuffer-1bit",
+    "matrixlcd-printf-1bit",
+    "wrd-message-center",
+    "message-center-spi-master"
+  ],
+  "config": {
+    "mbed-os": {
+      "stdio": {
+        "default-baud": 115200
+      }
+    },
+    "hardware": {
+      "wearable-reference-design": {
+        "battery": {
+          "present": false
+        },
+        "battery-backup": {
+          "present": false
+        },
+        "battery-gauge": {
+          "present": false
+        },
+        "bit-band": {
+          "present": false
+        },
+        "bluetooth-le": {
+          "present": false
+        },
+        "button": {
+          "present": true,
+          "forward": {
+            "gpio": {
+              "pin": "PC_13"
+            }
+          },
+          "backward": {
+            "gpio": {
+              "pin": "NC"
+            }
+          }
+        },
+        "buzzer": {
+          "present": false
+        },
+        "external-gpio": {
+          "present": false
+        },
+        "external-sram": {
+          "present": false
+        },
+        "gps": {
+          "present": false
+        },
+        "interface": {
+          "i2c": {
+            "size": 0
+          },
+          "spi": {
+            "size": 0
+          }
+        },
+        "message-center": {
+          "present": true,
+          "transport": {
+            "size": 0
+          }
+        },
+        "micro-sd": {
+          "present": false
+        },
+        "nfc": {
+          "present": false
+        },
+        "output-compare": {
+          "present": false
+        },
+        "rfid": {
+          "present": false
+        },
+        "rgb-led": {
+          "present": false
+        },
+        "screen": {
+          "present": false
+        },
+        "sensor-accelerometer": {
+          "present": false
+        },
+        "sensor-gyroscope": {
+          "present": false
+        },
+        "sensor-magnetometer": {
+          "present": false
+        },
+        "sensor-battery-current": {
+          "present": false
+        },
+        "sensor-battery-charging-current": {
+          "present": false
+        },
+        "sensor-battery-voltage": {
+          "present": false
+        },
+        "sensor-fingerprint": {
+          "present": false
+        },
+        "sensor-temperature": {
+          "present": false
+        },
+        "swo": {
+          "present": false
+        },
+        "touch": {
+          "present": false
+        },
+        "vibration-motor": {
+          "present": false
+        },
+        "watchdog": {
+          "present": false
+        }
+      }
+    }
+  }
+}
