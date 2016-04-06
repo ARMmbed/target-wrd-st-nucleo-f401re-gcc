@@ -9,7 +9,7 @@
     }
   ],
   "inherits": {
-    "st-nucleo-f401re-gcc": "*"
+    "st-nucleo-f401re-gcc": "~0.2.0"
   },
   "keywords": [
     "mbed-target:wrd-st-nucleo-f401re",
@@ -31,7 +31,7 @@
       }
     },
     "hardware": {
-      "wearable-reference-design": {
+      "wrd": {
         "battery": {
           "present": false
         },
@@ -49,24 +49,19 @@
         },
         "button": {
           "present": true,
-          "forward": {
-            "gpio": {
-              "pin": "PC_13"
-            }
-          },
-          "backward": {
-            "gpio": {
-              "pin": "NC"
-            }
+          "size": 1,
+          "button0": {
+            "pin": "PC_13",
+            "location": 0
           }
         },
         "buzzer": {
           "present": false
         },
-        "external-gpio": {
+        "external-sram": {
           "present": false
         },
-        "external-sram": {
+        "gpio-expander": {
           "present": false
         },
         "gps": {
@@ -80,10 +75,16 @@
             "size": 0
           }
         },
-        "message-center": {
+        "led": {
           "present": true,
-          "transport": {
-            "size": 0
+          "size": 2,
+          "led0": {
+            "pin": "PA_5",
+            "location": 0
+          },
+          "led1": {
+            "pin": "PG_5",
+            "location": 0
           }
         },
         "micro-sd": {
@@ -108,9 +109,6 @@
           "present": false
         },
         "sensor-gyroscope": {
-          "present": false
-        },
-        "sensor-magnetometer": {
           "present": false
         },
         "sensor-battery-current": {
